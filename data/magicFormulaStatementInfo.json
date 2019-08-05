@@ -1,0 +1,637 @@
+{
+    "peAve": 7.482114742805453,
+    "pbAve": 2.183868258672292,
+    "returnOnCapitalAve": 26.3681013205654,
+    "magicFormulaStatement": [
+        {
+            "code": "300107",
+            "name": "建新股份",
+            "isST": false,
+            "marketValue": 5006539112.639999,
+            "investProfitRadio": 0.01958339484194595,
+            "extraodinaryProfitRadio": 0,
+            "pe_sub": "",
+            "pe": "",
+            "pb": "",
+            "category": "制造业",
+            "earningsYield": {
+                "value": 0.1260648078000473,
+                "rank": 15
+            },
+            "returnOnCapital": {
+                "value": 0.7198054942812863,
+                "rank": 3
+            },
+            "rank": 1
+        },
+        {
+            "code": "600516",
+            "name": "方大炭素",
+            "isST": false,
+            "marketValue": 30394049117.96,
+            "investProfitRadio": 0.02314980105655149,
+            "extraodinaryProfitRadio": 1.0290275761973875,
+            "pe_sub": 7.09,
+            "pe": 6.89,
+            "pb": 2.27,
+            "category": "制造业",
+            "earningsYield": {
+                "value": 0.14087795991915744,
+                "rank": 9
+            },
+            "returnOnCapital": {
+                "value": 0.42089291132211565,
+                "rank": 9
+            },
+            "rank": 2
+        },
+        {
+            "code": "002110",
+            "name": "三钢闽光",
+            "isST": false,
+            "marketValue": 20813882260.62,
+            "investProfitRadio": 0.007472510414387746,
+            "extraodinaryProfitRadio": 1.134375,
+            "pe_sub": 3.63,
+            "pe": 3.2,
+            "pb": 1.08,
+            "category": "制造业",
+            "earningsYield": {
+                "value": 0.21995523946965953,
+                "rank": 1
+            },
+            "returnOnCapital": {
+                "value": 0.2966971339560925,
+                "rank": 27
+            },
+            "rank": 3
+        },
+        {
+            "code": "600585",
+            "name": "海螺水泥",
+            "isST": false,
+            "marketValue": 163147868197.41,
+            "investProfitRadio": 0.026408177557082444,
+            "extraodinaryProfitRadio": 1.0014388489208632,
+            "pe_sub": 6.96,
+            "pe": 6.95,
+            "pb": 1.82,
+            "category": "制造业",
+            "earningsYield": {
+                "value": 0.16563114966989165,
+                "rank": 2
+            },
+            "returnOnCapital": {
+                "value": 0.2868904686330353,
+                "rank": 31
+            },
+            "rank": 4
+        },
+        {
+            "code": "600507",
+            "name": "方大特钢",
+            "isST": false,
+            "marketValue": 12961851075.9,
+            "investProfitRadio": 0,
+            "extraodinaryProfitRadio": 1.0175438596491229,
+            "pe_sub": 4.64,
+            "pe": 4.56,
+            "pb": 2.71,
+            "category": "制造业",
+            "earningsYield": {
+                "value": 0.13530619069679276,
+                "rank": 11
+            },
+            "returnOnCapital": {
+                "value": 0.3202463349160508,
+                "rank": 23
+            },
+            "rank": 5
+        },
+        {
+            "code": "603585",
+            "name": "苏利股份",
+            "isST": false,
+            "marketValue": 4165200000,
+            "investProfitRadio": 0.031573782563943116,
+            "extraodinaryProfitRadio": 1.0407023144453311,
+            "pe_sub": 13.04,
+            "pe": 12.53,
+            "pb": 2.26,
+            "category": "制造业",
+            "earningsYield": {
+                "value": 0.10290105939136053,
+                "rank": 23
+            },
+            "returnOnCapital": {
+                "value": 0.3544016247422638,
+                "rank": 18
+            },
+            "rank": 6
+        },
+        {
+            "code": "000629",
+            "name": "攀钢钒钛",
+            "isST": false,
+            "marketValue": 29978214244.980003,
+            "investProfitRadio": 0,
+            "extraodinaryProfitRadio": 1.0112612612612613,
+            "pe_sub": 8.98,
+            "pe": 8.88,
+            "pb": 3.4,
+            "category": "制造业",
+            "earningsYield": {
+                "value": 0.10157406739498405,
+                "rank": 26
+            },
+            "returnOnCapital": {
+                "value": 0.3348021822484403,
+                "rank": 19
+            },
+            "rank": 7
+        },
+        {
+            "code": "600618",
+            "name": "氯碱化工",
+            "isST": false,
+            "marketValue": 5781266214.96,
+            "investProfitRadio": 0.3250777905011933,
+            "extraodinaryProfitRadio": 1.0087064676616915,
+            "pe_sub": 8.11,
+            "pe": 8.04,
+            "pb": 2.11,
+            "category": "制造业",
+            "earningsYield": {
+                "value": 0.15542848218726016,
+                "rank": 5
+            },
+            "returnOnCapital": {
+                "value": 0.25661284090725067,
+                "rank": 42
+            },
+            "rank": 8
+        },
+        {
+            "code": "000789",
+            "name": "万年青",
+            "isST": false,
+            "marketValue": 7662761045.58,
+            "investProfitRadio": 0.01545243857479155,
+            "extraodinaryProfitRadio": 0.9380530973451328,
+            "pe_sub": 6.36,
+            "pe": 6.78,
+            "pb": 1.8,
+            "category": "制造业",
+            "earningsYield": {
+                "value": 0.1614500906564599,
+                "rank": 3
+            },
+            "returnOnCapital": {
+                "value": 0.24824902515843064,
+                "rank": 47
+            },
+            "rank": 9
+        },
+        {
+            "code": "000672",
+            "name": "上峰水泥",
+            "isST": false,
+            "marketValue": 9568169682.96,
+            "investProfitRadio": 0.04459726630621709,
+            "extraodinaryProfitRadio": 1.0434782608695652,
+            "pe_sub": 6,
+            "pe": 5.75,
+            "pb": 2.51,
+            "category": "制造业",
+            "earningsYield": {
+                "value": 0.12826695202624877,
+                "rank": 13
+            },
+            "returnOnCapital": {
+                "value": 0.2600515972111421,
+                "rank": 40
+            },
+            "rank": 10
+        },
+        {
+            "code": "002234",
+            "name": "民和股份",
+            "isST": false,
+            "marketValue": 7720311913.92,
+            "investProfitRadio": 0.014778253591318971,
+            "extraodinaryProfitRadio": 1.0172239108409322,
+            "pe_sub": 10.04,
+            "pe": 9.87,
+            "pb": 5.13,
+            "category": "农、林、牧、渔业",
+            "earningsYield": {
+                "value": 0.0858326995596954,
+                "rank": 47
+            },
+            "returnOnCapital": {
+                "value": 0.3574272056781427,
+                "rank": 17
+            },
+            "rank": 11
+        },
+        {
+            "code": "600801",
+            "name": "华新水泥",
+            "isST": false,
+            "marketValue": 25385440497.2,
+            "investProfitRadio": 0.012423840755766292,
+            "extraodinaryProfitRadio": 1.0144927536231882,
+            "pe_sub": 7,
+            "pe": 6.9,
+            "pb": 2.21,
+            "category": "制造业",
+            "earningsYield": {
+                "value": 0.15732407402741122,
+                "rank": 4
+            },
+            "returnOnCapital": {
+                "value": 0.22383990640694737,
+                "rank": 64
+            },
+            "rank": 12
+        },
+        {
+            "code": "600230",
+            "name": "沧州大化",
+            "isST": false,
+            "marketValue": 5527208196.84,
+            "investProfitRadio": 0,
+            "extraodinaryProfitRadio": 1.002205071664829,
+            "pe_sub": 9.09,
+            "pe": 9.07,
+            "pb": 1.54,
+            "category": "制造业",
+            "earningsYield": {
+                "value": 0.10140962048125814,
+                "rank": 28
+            },
+            "returnOnCapital": {
+                "value": 0.2314290375876066,
+                "rank": 54
+            },
+            "rank": 13
+        },
+        {
+            "code": "002755",
+            "name": "奥赛康",
+            "isST": false,
+            "marketValue": 10516056776.83,
+            "investProfitRadio": 0,
+            "extraodinaryProfitRadio": 1.0478896103896105,
+            "pe_sub": 12.91,
+            "pe": 12.32,
+            "pb": 5.18,
+            "category": "制造业",
+            "earningsYield": {
+                "value": 0.07345983512027421,
+                "rank": 75
+            },
+            "returnOnCapital": {
+                "value": 0.4158731343547807,
+                "rank": 10
+            },
+            "rank": 14
+        },
+        {
+            "code": "601003",
+            "name": "柳钢股份",
+            "isST": false,
+            "marketValue": 14377269852,
+            "investProfitRadio": -0.000034295918619110666,
+            "extraodinaryProfitRadio": 1.010989010989011,
+            "pe_sub": 3.68,
+            "pe": 3.64,
+            "pb": 1.32,
+            "category": "制造业",
+            "earningsYield": {
+                "value": 0.1402405921804604,
+                "rank": 10
+            },
+            "returnOnCapital": {
+                "value": 0.20982658721074252,
+                "rank": 78
+            },
+            "rank": 15
+        },
+        {
+            "code": "300132",
+            "name": "青松股份",
+            "isST": false,
+            "marketValue": 5455094156.16,
+            "investProfitRadio": 0,
+            "extraodinaryProfitRadio": 0,
+            "pe_sub": "",
+            "pe": "",
+            "pb": "",
+            "category": "制造业",
+            "earningsYield": {
+                "value": 0.0724419682507269,
+                "rank": 80
+            },
+            "returnOnCapital": {
+                "value": 0.32737198718609556,
+                "rank": 22
+            },
+            "rank": 16
+        },
+        {
+            "code": "000717",
+            "name": "韶钢松山",
+            "isST": false,
+            "marketValue": 10234588254.300001,
+            "investProfitRadio": -0.002089535123991934,
+            "extraodinaryProfitRadio": 0.9777158774373259,
+            "pe_sub": 3.51,
+            "pe": 3.59,
+            "pb": 1.55,
+            "category": "制造业",
+            "earningsYield": {
+                "value": 0.14474681178599264,
+                "rank": 8
+            },
+            "returnOnCapital": {
+                "value": 0.19597888116007758,
+                "rank": 99
+            },
+            "rank": 17
+        },
+        {
+            "code": "000720",
+            "name": "新能泰山",
+            "isST": false,
+            "marketValue": 6796460569.74,
+            "investProfitRadio": 0,
+            "extraodinaryProfitRadio": 1.0127551020408163,
+            "pe_sub": 7.94,
+            "pe": 7.84,
+            "pb": 2.67,
+            "category": "电力、热力、燃气及水生产和供应业",
+            "earningsYield": {
+                "value": 0.09695473888733609,
+                "rank": 34
+            },
+            "returnOnCapital": {
+                "value": 0.19851025934167033,
+                "rank": 95
+            },
+            "rank": 18
+        },
+        {
+            "code": "002233",
+            "name": "塔牌集团",
+            "isST": false,
+            "marketValue": 13329634678.88,
+            "investProfitRadio": 0.07180207070635834,
+            "extraodinaryProfitRadio": 1.1186666666666667,
+            "pe_sub": 8.39,
+            "pe": 7.5,
+            "pb": 1.42,
+            "category": "制造业",
+            "earningsYield": {
+                "value": 0.12141375760525189,
+                "rank": 16
+            },
+            "returnOnCapital": {
+                "value": 0.18719025076942303,
+                "rank": 113
+            },
+            "rank": 19
+        },
+        {
+            "code": "603113",
+            "name": "金能科技",
+            "isST": false,
+            "marketValue": 7306905508.55,
+            "investProfitRadio": 0.05536165463168717,
+            "extraodinaryProfitRadio": 1.115689381933439,
+            "pe_sub": 7.04,
+            "pe": 6.31,
+            "pb": 1.46,
+            "category": "制造业",
+            "earningsYield": {
+                "value": 0.13210045308086238,
+                "rank": 12
+            },
+            "returnOnCapital": {
+                "value": 0.1846184758718737,
+                "rank": 118
+            },
+            "rank": 20
+        },
+        {
+            "code": "603444",
+            "name": "吉比特",
+            "isST": false,
+            "marketValue": 14093229033.5,
+            "investProfitRadio": 0.0612779912216586,
+            "extraodinaryProfitRadio": 1.1004997223764574,
+            "pe_sub": 19.82,
+            "pe": 18.01,
+            "pb": 4.51,
+            "category": "信息传输、软件和信息技术服务业",
+            "earningsYield": {
+                "value": 0.06723857091039726,
+                "rank": 104
+            },
+            "returnOnCapital": {
+                "value": 0.2836718606920167,
+                "rank": 32
+            },
+            "rank": 21
+        },
+        {
+            "code": "000636",
+            "name": "风华高科",
+            "isST": false,
+            "marketValue": 10715940338.67,
+            "investProfitRadio": 0.06515108674954086,
+            "extraodinaryProfitRadio": 1.0819348469891412,
+            "pe_sub": 10.96,
+            "pe": 10.13,
+            "pb": 1.9,
+            "category": "制造业",
+            "earningsYield": {
+                "value": 0.0902454956058638,
+                "rank": 43
+            },
+            "returnOnCapital": {
+                "value": 0.18939280869031683,
+                "rank": 107
+            },
+            "rank": 22
+        },
+        {
+            "code": "002746",
+            "name": "仙坛股份",
+            "isST": false,
+            "marketValue": 7187233920.5,
+            "investProfitRadio": 0.05960587833712478,
+            "extraodinaryProfitRadio": 1.0866372980910426,
+            "pe_sub": 14.8,
+            "pe": 13.62,
+            "pb": 2.76,
+            "category": "农、林、牧、渔业",
+            "earningsYield": {
+                "value": 0.07108004381241324,
+                "rank": 84
+            },
+            "returnOnCapital": {
+                "value": 0.2214205152170439,
+                "rank": 66
+            },
+            "rank": 23
+        },
+        {
+            "code": "002458",
+            "name": "益生股份",
+            "isST": false,
+            "marketValue": 10831807556.460001,
+            "investProfitRadio": 0.018746779297357994,
+            "extraodinaryProfitRadio": 0.994572591587517,
+            "pe_sub": 14.66,
+            "pe": 14.74,
+            "pb": 5.66,
+            "category": "农、林、牧、渔业",
+            "earningsYield": {
+                "value": 0.06371425660453871,
+                "rank": 131
+            },
+            "returnOnCapital": {
+                "value": 0.3344042778804945,
+                "rank": 20
+            },
+            "rank": 24
+        },
+        {
+            "code": "600566",
+            "name": "济川药业",
+            "isST": false,
+            "marketValue": 23664957621.36,
+            "investProfitRadio": 0.012081718166054956,
+            "extraodinaryProfitRadio": 1.0687637161667884,
+            "pe_sub": 14.61,
+            "pe": 13.67,
+            "pb": 3.96,
+            "category": "制造业",
+            "earningsYield": {
+                "value": 0.06585913998230473,
+                "rank": 117
+            },
+            "returnOnCapital": {
+                "value": 0.2663941056435079,
+                "rank": 39
+            },
+            "rank": 25
+        },
+        {
+            "code": "300741",
+            "name": "华宝股份",
+            "isST": false,
+            "marketValue": 19178503200,
+            "investProfitRadio": 0.005026880626549891,
+            "extraodinaryProfitRadio": 0,
+            "pe_sub": "",
+            "pe": "",
+            "pb": "",
+            "category": "制造业",
+            "earningsYield": {
+                "value": 0.06171701246694671,
+                "rank": 146
+            },
+            "returnOnCapital": {
+                "value": 0.3718474968423219,
+                "rank": 14
+            },
+            "rank": 26
+        },
+        {
+            "code": "603980",
+            "name": "吉华集团",
+            "isST": false,
+            "marketValue": 6629000000,
+            "investProfitRadio": 0.08721403079092317,
+            "extraodinaryProfitRadio": 1.1137855579868707,
+            "pe_sub": 10.18,
+            "pe": 9.14,
+            "pb": 1.48,
+            "category": "制造业",
+            "earningsYield": {
+                "value": 0.10440308464544346,
+                "rank": 22
+            },
+            "returnOnCapital": {
+                "value": 0.17420327083279313,
+                "rank": 140
+            },
+            "rank": 27
+        },
+        {
+            "code": "603156",
+            "name": "养元饮品",
+            "isST": false,
+            "marketValue": 38544825900,
+            "investProfitRadio": 0.12194528580657348,
+            "extraodinaryProfitRadio": 1.159513590844063,
+            "pe_sub": 16.21,
+            "pe": 13.98,
+            "pb": 3,
+            "category": "制造业",
+            "earningsYield": {
+                "value": 0.06905603493881379,
+                "rank": 93
+            },
+            "returnOnCapital": {
+                "value": 0.22005095725304324,
+                "rank": 70
+            },
+            "rank": 28
+        },
+        {
+            "code": "300121",
+            "name": "阳谷华泰",
+            "isST": false,
+            "marketValue": 3011740721.5,
+            "investProfitRadio": 0,
+            "extraodinaryProfitRadio": 0,
+            "pe_sub": "",
+            "pe": "",
+            "pb": "",
+            "category": "制造业",
+            "earningsYield": {
+                "value": 0.09253699058797298,
+                "rank": 40
+            },
+            "returnOnCapital": {
+                "value": 0.18081962583648017,
+                "rank": 126
+            },
+            "rank": 29
+        },
+        {
+            "code": "002075",
+            "name": "沙钢股份",
+            "isST": false,
+            "marketValue": 18250002554.44,
+            "investProfitRadio": 0.07440214649881455,
+            "extraodinaryProfitRadio": 1.157422969187675,
+            "pe_sub": 20.66,
+            "pe": 17.85,
+            "pb": 3.98,
+            "category": "制造业",
+            "earningsYield": {
+                "value": 0.08839950005423221,
+                "rank": 44
+            },
+            "returnOnCapital": {
+                "value": 0.18263068966169918,
+                "rank": 123
+            },
+            "rank": 30
+        }
+    ]
+}

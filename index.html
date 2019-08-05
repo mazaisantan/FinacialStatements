@@ -1,0 +1,126 @@
+<!doctype html>
+<html ng-app="overview">
+<head>
+    <meta http-equiv='Content-Type' content='text/html' charset='UTF-8'/>
+    <meta http-equiv="Access-Control-Allow-Origin" content="*">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=10"/>
+    <meta name="keywords" content="数据服务平台，API，证券数据API，证券数据，开发者平台，证券数据服务,巨潮资讯，巨潮数据，巨潮财经"/>
+    <meta name="description" content="深证信数据服务平台是由深圳证券信息有限公司出品，覆盖上市公司、基金、债券、公告
+	    等内容的大数据服务平台。深证信数据服务平台不仅支持接口方式访问，还支持主题数据推送，同时还可以定制开发，满足
+	    用户个性化需求，为投资决策提供重要支持。">
+
+    <link href="static/images/logo.png" rel="shortcut icon">
+    <link rel='stylesheet' type='text/css' href="static/expand/css/bootstrap.min.css"/>
+    <link rel='stylesheet' type='text/css' href="static/expand/css/font-awesome.min.css"/>
+    <link rel='stylesheet' type='text/css' href="static/expand/css/easydialog.css" />
+    <link rel='stylesheet' type='text/css' href="static/expand/css/bootstrap-datepicker.css" />
+    <link rel='stylesheet' type='text/css' href="static/expand/css/jquery.timepicker.css" />
+    <link rel='stylesheet' type='text/css' href="static/expand/css/pikaday.css" />
+    <link rel="stylesheet" type="text/css" href="static/expand/css/jquery.ptTimeSelect.css" />
+    <link rel="stylesheet" type="text/css" href="static/expand/css/site.css" />
+    <link rel='stylesheet' type='text/css' href="static/expand/validate/jquery.validator.css" />
+    <link rel='stylesheet' type='text/css' href="static/expand/jquery.treemenu/jquery.treemenu.css" />
+    <link rel='stylesheet' type='text/css' href="static/expand/css/bootstrap-table.css" />
+    <link rel='stylesheet' type='text/css' href="static/expand/css/jquery.editable-select.css" />
+    
+    <link rel='stylesheet' type='text/css' href="static/css/base.css"/>
+    <link rel='stylesheet' type='text/css' href="static/css/home.css"/>
+    <link rel='stylesheet' type='text/css' href="static/css/myBill.css"/>
+    <link rel='stylesheet' type='text/css' href="static/css/dataMall.css"/>
+    <link rel="stylesheet" type="text/css" href="static/css/dataDownload.css"/>
+    <link rel="stylesheet" type="text/css" href="static/css/marketData.css"/>
+    <link rel='stylesheet' type='text/css' href="static/css/apiDoc.css"/>
+    <link rel="stylesheet" type="text/css" href="static/css/dataBrowse.css" />
+    <link rel="stylesheet" type="text/css" href="static/css/thematicStatistics.css" />
+    <link rel="stylesheet" type="text/css" href="static/expand/partialviewslider/partialviewslider.min.css">
+    <link rel="stylesheet" type="text/css" href="static/css/company.css" />
+    <link rel="stylesheet" type="text/css" href="static/css/notice.css" />
+    <link rel="stylesheet" type="text/css" href="static/css/upgrade.css" />
+    <link rel='stylesheet' type='text/css' href="static/css/terminal.css" />
+    <!--<link rel='stylesheet' type='text/css' href="static/css/tongzhi.css" />-->
+
+    <script src="static/expand/js/jquery-2.1.1.min.js"></script>
+    <script src="static/expand/js/bootstrap.min.js"></script>
+    <script src="static/expand/js/jquery.timepicker.js"></script>
+    <script src="static/expand/js/bootstrap-datepicker.js"></script>
+    <script src="static/expand/js/pikaday.js"></script>
+    <script src="static/expand/js/jquery.ptTimeSelect.js"></script>
+    <script src="static/expand/js/site.js"></script>
+    <script src="https://cdn.bootcss.com/datepair.js/0.2.0/datepair.js" async="async"></script>
+    <script src="static/expand/js/jquery.datepair.js"></script>
+    <script src="static/expand/js/bootstrap-table.js"></script>
+    <script src="static/expand/js/bootstrap-table-export.js"></script>
+    <script src="static/expand/js/bootstrap-table-zh-CN.js"></script>
+    <script src="static/expand/js/jquery.base64.js"></script>
+    <script src="static/expand/js/jquery.editable-select.js"></script>
+    <script src="static/expand/js/jquery.xdomainrequest.min.js"></script>
+    <script src="static/expand/js/angular.min.js"></script>
+    <script src="static/expand/js/angular-route.min.js"></script>
+    <script src="static/expand/js/esl.js"></script>
+    <script src="static/expand/js/easydialog.min.js"></script>
+    <script src="static/expand/js/jquery.page.js"></script>
+    <script src="static/expand/js/cookie.js"></script>
+    <script src="static/expand/validate/jquery.validator.js"></script>
+    <script src="static/expand/validate/zh_CN.js"></script>
+    <script src="static/expand/jquery.treemenu/jquery.treemenu.js"></script>
+    <script src="static/expand/js/pdfShow.js" type="text/javascript" charset="UTF-8"></script>
+    <script src="static/expand/js/json2csv.js"></script>
+    <script src="static/js/index.js"></script>
+    <script src="static/env.js"></script>
+    <script src="static/app.js"></script>
+    <script src="static/js/common.js"></script>
+    <!--<script src="static/js/tongzhi.js"></script>-->
+    <!--QQ登录-->
+    <script type="text/javascript" src="https://qzonestyle.gtimg.cn/qzone/openapi/qc_loader.js"  data-appid="101530107" charset="utf-8"></script>
+    <script type="text/javascript" src="static/expand/partialviewslider/partialviewslider.min.js"></script>
+
+    <script id="code"></script>
+    <title>深证信数据服务平台</title>
+    <script type="text/javascript">
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.async = true;
+            hm.src = "https://hm.baidu.com/hm.js?489bd07e99fbfc5f12cbb4145adb0a9b";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+    <script type="text/javascript">
+        //IE兼容性
+        if (window["context"] == undefined) {
+            if (!window.location.origin) {
+                window.location.origin = window.location.protocol + "//" + window.location.hostname + (window.location.port ? ':' + window.location.port: '');
+            }
+            window["context"] = location.origin+"/V6.0";
+        }
+    </script>
+</head>
+<body>
+<div class="container-fluid">
+    <div id="top"></div>
+    <!-- 头部 -->
+    <div ng-include="'templates/header.html'"></div>
+    <!-- 头部 End-->
+    <!-- 主体 -->
+    <div class="mainArea row" style="padding: 0;">
+
+        <div ng-view style="padding: 0">
+            (MainBody)
+        </div>
+
+    </div>
+    <!-- 主体 End-->
+    <!-- 底部 -->
+    <div ng-include="'templates/footer.html'"></div>
+    <!-- 底部 End-->
+
+    <div ng-include="'templates/goTop.html'"></div>
+</div>
+
+<script type="text/javascript">
+
+</script>
+</body>
+</html>

@@ -1,0 +1,99 @@
+<div class='topArea row' id="topAreas">
+  <h1 class="szx-h1"><strong></strong></h1>
+  <div class="my-tab-nav pull-left szx-nav container-fluid" style="margin-left: 8px;">
+    <ul id="header-tab" class="nav nav-tabs row">
+      <li class="col-lg-2">
+        <a data-toggle="tab" href="#dataMall"><span class="s-nav nav1"></span><br>数据超市</a>
+      </li>
+      <li class="col-lg-2">
+        <a data-toggle="tab" href="#marketData"><span class="s-nav nav2"></span><br>行情中心</a>
+      </li>
+      <li class="col-lg-2">
+        <a data-toggle="tab" href="#dataBrowse"><span class="s-nav nav3"></span><br>数据搜索</a>
+      </li>
+      <li class="col-lg-2">
+        <a data-toggle="tab" href="#thematicStatistics"><span class="s-nav nav4"></span><br>专题统计</a>
+      </li>
+      <li class="col-lg-2">
+        <a data-toggle="tab" href="#company"><span class="s-nav nav5"></span><br>公司快照</a>
+      </li>
+      <li class="col-lg-2">
+        <a data-toggle="tab" href="#notice"><span class="s-nav nav6"></span><br>公告定制</a>
+      </li>      
+    </ul>
+  </div>
+  <ul class="notLoginBox szx-notLoginBox notLoginBox_admin" style="position: absolute; top: 0; right: 0;">
+    <li><a href="#/home">首页</a></li>
+    <li>
+      <div class="dropdown">
+        <span  class="dropdown-txt">数据服务<strong class="glyphicon glyphicon-menu-down"></strong></span>
+        <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dLabel">
+          <li><a href="#company">公司快照</a></li>
+          <li><a href="#dataDownload">个股API</a></li>
+          <li><a href="#marketData">行情中心</a></li>
+          <li><a href="#thematicStatistics">专题统计</a></li>
+          <li><a href="#dataBrowse">数据搜索</a></li>
+          <li><a href="#notice">公告定制</a></li>          
+        </ul>
+      </div>
+    </li>
+    <li>
+      <div class="dropdown">
+        <span  class="dropdown-txt">数据商城<strong class="glyphicon glyphicon-menu-down"></strong></span>
+        <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dLabel">
+          <li><a href="#dataMall">数据超市</a></li>
+          <li><a href="#xiazaiqi">数据下载器</a></li>
+          <li><a href="#apiDoc">API文档</a></li>
+          <li><a href="#issue">API帮助</a></li>
+          <li><a href="#contact">联系我们</a></li>
+          <li><a href="#aboutUs">关于我们</a></li>
+        </ul>
+      </div>
+    </li>
+    <li>
+      <span class="notLoginSpan">
+        <a href="" data-toggle="modal" data-target="#myModal">登录</a>/<a href="https://passport.cninfo.com.cn/registerView?service=http://webapi.cninfo.com.cn" target="_blank">注册</a>
+      </span>
+      <div class="dropdown loginBox" style="display: none;">
+        <span  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-txt"><strong class="user" style="position: relative;top: -10px;"></strong><strong class="jg" style="position: relative;top: -10px;"></strong><i class="userName"></i><strong class="glyphicon glyphicon-menu-down" style="position: relative; top: -14px;"></strong></span>
+        <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dLabel" style="top: 68%;left: 53px;">
+          <li><a href="#myApi" class="personalCenter">个人中心</a></li>
+          <li><a href="javascript: void(0);" class="logout">退出</a></li>
+        </ul>
+      </div>
+    </li>
+  </ul>
+</div>
+
+<script type="text/javascript">
+  $(function () {
+    var isLogin = localStorage.getItem("login")
+    var user = localStorage.getItem("user");
+    var userType = localStorage.getItem("userType");
+    if(isLogin) {
+        $('.notLoginSpan').hide()
+        $('.loginBox').css('display', 'inline-block');
+        $('.loginBox .userName').text(user).attr('title', user);
+        if(userType == '0') {
+            $('.user').css('display', 'inline-block');
+            $('.jg').hide();
+          }else {
+            $('.jg').css('display', 'inline-block');
+            $('.user').hide();
+        }
+    } else {
+        $('.notLoginSpan').css('display', 'inline-block');
+        $('.loginBox').hide()
+    }
+
+    $('.dropdown').hover(function () {
+        $(this).find('.dropdown-menu').show();
+    }, function () {
+      $(this).find('.dropdown-menu').hide();
+    })
+
+   $('.dropdown a').click(function () {
+     $(this).parents('.dropdown').find('.dropdown-menu').hide();
+   })
+  })
+</script>

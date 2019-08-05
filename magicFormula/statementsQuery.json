@@ -1,0 +1,52 @@
+[
+    {
+        "name": "个股报告期指标表",
+        "terms": [
+            {
+                "fieldName": "SECCODE",
+                "fieldChineseName": "证券代码",
+                "fieldType": "DECIMAL",
+                "describe": ""
+            },
+            {
+                "fieldName": "SECNAME",
+                "fieldChineseName": "证券简称",
+                "fieldType": "VARCHAR",
+                "describe": ""
+            },
+            {
+                "fieldName": "F016N",
+                "fieldChineseName": "总资产报酬率",
+                "fieldType": "DECIMAL",
+                "describe": "净利润/(期末资产总额+期初资产总额)/2*100"
+            }
+        ],
+        "date": "2019-0331",
+        "dateFormat": "&rdate=%repyear%reptype&type=071001"
+    },
+    {
+        "name": "行情数据",
+        "terms": [
+            {
+                "fieldName": "SECCODE",
+                "fieldChineseName": "股票代码",
+                "fieldType": "VARCHAR",
+                "describe": ""
+            },
+            {
+                "fieldName": "SECNAME",
+                "fieldChineseName": "股票简称",
+                "fieldType": "VARCHAR",
+                "describe": ""
+            },
+            {
+                "fieldName": "F033N",
+                "fieldChineseName": "市盈率TTM",
+                "fieldType": "DECIMAL",
+                "describe": ""
+            }
+        ],
+        "date": "20190612-20190612",
+        "dateFormat": "&sdate=%sdate&edate=%edate"
+    }
+]

@@ -1,0 +1,200 @@
+
+<div class="szx-menu" o-gotop>
+  <ul>
+    <li id="ewm">
+      <span><i></i><br>关注</span>
+      <div>
+          <div><img src="./static/images/ewm.jpg" /></div>
+      </div>
+    </li>
+    <li id="loginLi">
+      <span data-toggle="modal" data-target="#myModal"><i></i><br>登录</span>
+    </li>
+    <li class="cs">
+      <span><i></i><br>客服</span>
+      <div>
+        <div><a href="mailto: apidata@cninfo.com.cn">apidata@cninfo.com.cn</a></div>
+      </div>
+    </li>
+    <li>
+      <span class="goTop" id="goTop"><strong></strong><br>回顶部</span>
+    </li>
+  </ul>
+</div>
+
+<div class="modal fade szx-login" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title login-title" id="myModalLabel">
+          已注册<span>巨潮网</span>账号，可直接登录
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true" style="position: absolute; top: 15px; right: 15px;">&times;</span></button>
+        </h4>
+      </div>
+      <div class="modal-body">
+        <form role="form" id="login-form">
+          <div class="form-group">
+            <input type="text" class="form-control" name="username" placeholder="巨潮网/互动易/本平台用户">
+          </div>
+          <div class="form-group">
+            <input type="text" class="form-control" name="cipherCode" placeholder="请输入密码" onclick="fun(this)" onfocus="fun(this)">
+          </div>
+          <div class="form-group verifycode">
+            <input type="text" class="form-control" name="verifycode" placeholder="请输入验证码" style="     display: block;">
+            <img id="test_img" src=""/>
+          </div>
+          <!-- <div class="form-group checkbox">
+            <label>
+              <input type="checkbox">一个月内自动登录
+            </label>
+          </div> -->
+          <div class="form-group szx-login-btn" style="padding-top: 5px;">
+            <button type="submit" id="login-btn" class="btn btn-default login-btn">登 录</button>
+            <div class="login-remember">
+              <a href="https://uc.cninfo.com.cn/forget" target="_blank" >忘记密码</a>
+            </div>
+            <div class="threeParty">
+              <span id="qq" class="qq"><a href="javascript:void(0)"><img src="./static/images/qq.png"></a></span>
+              <span id="wx"><a href="javascript:void(0)"><img src="./static/images/wx.png"></a></span>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal -->
+</div>
+
+<div class="modal fade szx-login" id="firstLoginModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title">
+          首次登录
+        </h4>
+      </div>
+      <div class="modal-body">
+        <form role="form" id="firstLogin">
+          <div class="form-group">
+            <input type="text" class="form-control" name="nickname" id="nickname" placeholder="昵称">
+          </div>
+          <div class="form-group">
+            <input type="text" class="form-control" name="phone" id="phone" placeholder="手机号">
+          </div>
+          <div class="form-group">
+            <input type="text" class="form-control" name="firstcode" id="firstcode" placeholder="验证码" style="display: block;" maxlength="6" autocomplete="off" />
+            <button id="getCode" class="getCode btn btn-default">获取验证码</button>
+          </div>
+          <!-- <div class="form-group checkbox">
+            <label>
+              <input type="checkbox">一个月内自动登录
+            </label>
+          </div> -->
+          <div class="form-group" style="padding-top: 5px;">
+            <button type="submit" id="register-btn" class="btn btn-default login-btn">确 定</button>
+          </div>
+        </form>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal -->
+</div>
+
+
+<script src="static/js/jbase64.js"></script>
+<script src="static/js/login.js"></script>
+
+<script src="static/js/qqlogin.js"></script>
+
+<script src="static/js/wxlogin.js"></script>
+
+<script type="text/javascript">
+  bfd.login.init()
+
+  function fun(obj) {
+      obj.type="password";
+  }
+
+  $(function () {
+
+    var logintype = localStorage.getItem("logintype");
+    var isLogin = localStorage.getItem("login")
+    var user = localStorage.getItem("user");
+    var userType = localStorage.getItem("userType");
+    if(isLogin) {
+        $('#loginLi').hide();
+    } else {
+       $('#loginLi').show();
+    }
+
+    var flag = true;
+    var countdown=60;
+    var _generate_code = $("#getCode");
+    function settime() {
+      if (countdown == 0) {
+        _generate_code.attr("disabled",false);
+        _generate_code.html("获取验证码");
+        countdown = 60;
+        flag = true
+        return false;
+      } else {
+        $(".generate_code").attr("disabled", true);
+        _generate_code.html("重新发送(" + countdown + ")");
+        countdown--;
+      }
+      setTimeout(function() {
+        settime();
+      },1000);
+    }
+ 
+    $('#goTop').click(function () {
+      document.getElementById('top') ? document.getElementById('top').scrollIntoView() : '';
+    })
+    $('#getCode').click(function(e) {
+      e.preventDefault();
+
+      var phone = $('#phone').val();
+      if(!(/^1[3-9]\d{9}$/.test(phone))) {
+        easyDialog.open({
+          container: {
+            content: "请填写有效的手机号",
+            yesFn: function(){
+            }
+          }
+        });
+        return;
+      }
+
+      if(flag) {
+        settime();
+        flag = false;
+        $.ajax({
+          url: env.baseUrl+'login/getSmsCode',
+          contentType: 'application/json; charset=UTF-8',
+          dataType:'json',
+          data:JSON.stringify({phone: phone}),
+          complete: function(XMLHttpRequest, status) {
+            if(status == 'error') return
+            $('#test_img').attr('src',env.baseUrl+"login/getVerfyCode?"+new Date().getTime())
+            var dataJson = XMLHttpRequest.responseJSON || JSON.parse(XMLHttpRequest.responseText)
+
+            if(dataJson.code !== '000000') return;
+          }
+        })
+      }
+    });
+
+    if(localStorage.getItem('userMsg')) {
+      $('#firstLoginModal').modal({
+        backdrop: 'static'
+      })
+      userMsg = JSON.parse(localStorage.getItem('userMsg'));
+      localStorage.removeItem('userMsg');
+    }
+
+    $('#qq').click(function () {
+      var state = location.href.split('#/')[1];
+      state = state.replace(new RegExp(/=/g),'*');
+      setCookie('state', state, 1);
+      window.location.href = 'https://graph.qq.com/oauth2.0/authorize?response_type=token&client_id=101530107&redirect_uri=' + env.cbUrl
+    })
+  })
+</script>

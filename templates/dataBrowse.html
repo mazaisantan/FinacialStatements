@@ -1,0 +1,232 @@
+<div class="mainArea" style="padding: 0" o-initdatabrowse>
+	<div class="dataBrowse main-cont clearfix">
+		<!-- 左侧 -->
+		<div class="cont-left pull-left" style="overflow: scroll;">
+			<ul class="nav nav-tabs">
+				<li class="active">
+					<a class="indexNavigationA" href="javascript:;" style="background: #f3f7fb; font-weight: bold;">数据搜索</a>
+				</li>
+			</ul>
+			<div>
+				<div class="" id="indexNavigation">
+					<div class="api-search-left">
+						<input type="text" placeholder="输入关键字查询">
+						<i class="fa fa-search"></i>
+					</div>
+					<!--tree-->
+					<div class="databrowse-tree">
+						<ul class="tree">
+							
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- 右侧 -->
+		<div class="cont-right pull-right">
+			<div class="databrowse-detail page-content">
+				<div class="right-title clearfix">
+			        <h4 id="apiName" class="pull-left" style="font-weight: bold;"></h4>
+		        </div>
+				<div class="detail-cont right-table-box">
+					<!-- 右侧上部 代码设置 -->
+					<div class="detail-cont-top">
+						<div class="detail-cont-top-p"><span>代码设置</span></div>
+						<!-- 右侧上部 标的分类 -->
+						<div class="cont-top-left">
+							<div class="classify-search-box">
+								<div class="classify-search">
+									<input type="text" placeholder="输入类别">
+									<i class="fa fa-search"></i>
+								</div>
+							</div>
+							<!-- detail-cont-tree -->
+							<div class="detail-cont-tree" style="overflow: auto;">
+								<ul class="classify-tree">
+									
+								</ul>
+							</div>
+						</div>
+						<!-- 右侧上部 代码选取 -->
+						<div class="cont-top-right clearfix">
+							<div class="select-box left">
+								<div class="select-box-title">
+									<label>
+										<input type="checkbox" class="checkbox-all" />
+										<i></i>
+										全选
+									</label>
+									<span class="check-count">可选代码[<i id="unselectcount"></i>]个</span>
+								</div>
+								<div class="codes-search-left">
+									<input type="text" placeholder="输入代码">
+									<i class="fa fa-search"></i>
+								</div>
+								<div class="select-content">
+									<ul class="unselect-ul">
+										<!--<li>
+											<input type="checkbox" class="checkboxs" />
+											<span data-name="自增ID" data-id="1111">自增ID</span>
+										</li>
+										<li>
+											<input type="checkbox" class="checkboxs" />
+											<span data-name="证券代码" data-id="1112">证券代码</span>
+										</li>
+										<li>
+											<input type="checkbox" class="checkboxs" />
+											<span data-name="发布时间" data-id="1113">发布时间</span>
+										</li>-->
+									</ul>
+								</div>
+							</div>
+							<div class="arrows-box">
+								<div class="arrow-btns">
+									<button class="arrow-btn right">添加</button>
+									<button class="arrow-btn left">删除</button>
+								</div>
+							</div>
+							<div class="select-box right">
+								<div class="select-box-title">
+									<label>
+										<input type="checkbox" class="checkbox-all" />
+										<i></i>
+										全选
+									</label>
+									<span class="check-count">已选代码[<i id="selectedcount"></i>]个</span>
+								</div>
+								<div class="select-content">
+									<ul class="selected-ul">
+	
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="detail-cont right-table-box">
+					<!-- 右侧下部 字段选取 -->
+					<div class="detail-cont-bottom" style="margin-top: 15px;">
+						<div class="detail-cont-top-p"><span>字段选取</span></div>
+						<div class="select-box left">
+							<div class="select-box-title">
+								<label>
+									<input type="checkbox" class="checkbox-all" />
+									<i></i>
+									全选
+								</label>
+								<span class="check-count">可选字段[<i id="unselectcount"></i>]个</span>
+							</div>
+							<div class="keys-search-left">
+								<input type="text" placeholder="输入字段名">
+								<i class="fa fa-search"></i>
+							</div>
+							<div class="select-content">
+								<ul class="unselect-ul">
+									<!--<li>
+										<input type="checkbox" class="checkboxs" />
+										<span data-name="自增ID" data-id="1111">自增ID</span>
+									</li>
+									<li>
+										<input type="checkbox" class="checkboxs" />
+										<span data-name="证券代码" data-id="1112">证券代码</span>
+									</li>
+									<li>
+										<input type="checkbox" class="checkboxs" />
+										<span data-name="发布时间" data-id="1113">发布时间</span>
+									</li>-->
+								</ul>
+							</div>
+						</div>
+						<div class="arrows-box">
+							<div class="arrow-btns">
+								<button class="arrow-btn right">添加</button>
+								<button class="arrow-btn left">删除</button>
+							</div>
+						</div>
+						<div class="select-box right">
+							<div class="select-box-title">
+								<label>
+									<input type="checkbox" class="checkbox-all" />
+									<i></i>
+									全选
+								</label>
+								<span class="check-count">已选字段[<i id="selectedcount"></i>]个</span>
+							</div>
+							<div class="select-content">
+								<ul class="selected-ul">
+
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="detail-cont-center detail-cont right-table-box">
+					<div class="detail-cont-top-p" style="margin-top: 15px;"><span>时间参数</span></div>
+					<div  class="condition1">
+						<!--<label>报告年度</label>-->
+						<label></label>
+						<select id="se1">
+							<option></option>
+							<option></option>
+							<option></option>
+						</select>
+					</div>
+					<div class="condition2">
+						<!--<label>报告类型</label>-->
+						<label></label>
+						<select>
+							<!--<option value="M_1231">年报</option>
+							<option value="M_0930">三季报</option>
+							<option value="M_0630">半年报</option>
+							<option value="M_0331">一季报</option>-->
+						</select>
+					</div>
+					<div class="condition3">
+						<!--<label>变动日期</label>-->
+						<label></label>
+						<div id="dBDatepair">
+			      			<input class="form-control date start" type="text"/>
+			      			-
+			      			<input class="form-control date end" type="text"/>
+			      			<!--<input readonly class="form-control date end" type="text"/>-->
+			      		</div>
+					</div>
+					<div class="condition4">
+						<!--<label>分红年度</label>-->
+						<label></label>
+						<select id="se2">
+							<option></option>
+							<option></option>
+							<option></option>
+						</select>
+					</div>
+				</div>
+				
+				<div class="detail-cont-btn">
+					<button class="dataBrowseBtn btn-primary">预览数据</button>
+				</div>
+
+				
+				<!-- 右侧下方数据表格展示 -->
+				<!-- table-responsive：水平滚动条 -->
+				<div class="detail-cont-table table-responsive detail-cont right-table-box szx-browse">
+					<div class="span_target">
+						<div class="detail-cont-top-p" style="margin-top: 15px;"><span><span class="span_lt"></span></span> <i class="exportBtn"><i class="glyphicon glyphicon-download-alt"></i>下载</i></div>
+						<span class="span_unit">(单位：<i id="i_unit"></i>)</span>
+						<span class="onloading">&nbsp;&nbsp;数据正在加载中，请稍后..</span>
+						<span class="tips">&nbsp;&nbsp;（注：查询数据量超过了20000条的限制，结果只展示20000条数据，请减少代码量或者缩短查询时间区间。）</span>
+						<span class="cancel">&nbsp;&nbsp;（注：数据获取请求超时，请再次点击“预览数据”刷新数据。）</span>
+						<span class="timeout">&nbsp;&nbsp;（注：单次请求的数据量过大，结果只展示部分股票代码的返回数据，请减少代码量或者缩短查询时间区间。）</span>
+						<span class="sysbusy">&nbsp;&nbsp;（注：系统繁忙，请稍后再试。）</span>
+					</div>
+					<table id="contentTable" class="table text-nowrap table-striped">
+						
+					</table>
+				</div>
+				<div id="showbox" style="display:none"></div>
+			</div>
+		</div>
+	</div>
+</div>
